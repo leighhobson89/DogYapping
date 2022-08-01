@@ -29,9 +29,7 @@ public class Main extends Application {
     public static void setTimer() {
         timer = new Timer(1000, e -> {
             timerValue++;
-            if (!waiting) {
-                playSound();
-            }
+            playSound();
         });
     }
 
